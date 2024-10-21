@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Payment System</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar for navigation -->
+        <aside class="sidebar">
+            <h2>Global Store</h2>
+            <nav class="sidebar-nav">
+                <a href="#" onclick="showSection('home')" class="nav-item">Home</a>
+                <a href="#" onclick="showSection('products')" class="nav-item">Products</a>
+                <a href="#" onclick="showSection('cart')" class="nav-item">Cart</a>
+                <a href="#" onclick="showSection('login')" class="nav-item">Login</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home" class="section home-section active">
+                <h2 class="center-text">Welcome to Global Store</h2>
+                <p class="center-text">Explore the best global products with automatic price conversion to INR for users
+                    in India.</p>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="section products-section">
+                <h2>Available Products</h2>
+                <div class="location-container">
+                    <label for="location">Select Location:</label>
+                    <select id="location" onchange="updatePricesBasedOnLocation()">
+                        <option value="IN">India</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="AU">Australia</option>
+                        <option value="SG">Singapore</option>
+                    </select>
+                </div>
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="./product 1.jpeg" alt="Product 1">
+                        <h3>Product 1</h3>
+                        <p id="price-symbol-1">Price: </p>
+                        <p id="price-inr-1">Price in INR: </p>
+                        <button class="buy-btn" id="btn-1" onclick="addToCart(100, 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 2.webp" alt="Product 2">
+                        <h3>Product 2</h3>
+                        <p id="price-symbol-2">Price: </p>
+                        <p id="price-inr-2">Price in INR: </p>
+                        <button class="buy-btn" id="btn-2" onclick="addToCart(200, 2)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 3.jpeg" alt="Product 3">
+                        <h3>Product 3</h3>
+                        <p id="price-symbol-3">Price: </p>
+                        <p id="price-inr-3">Price in INR: </p>
+                        <button class="buy-btn" id="btn-3" onclick="addToCart(150, 3)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 4.jpeg" alt="Product 4">
+                        <h3>Product 4</h3>
+                        <p id="price-symbol-4">Price: </p>
+                        <p id="price-inr-4">Price in INR: </p>
+                        <button class="buy-btn" id="btn-4" onclick="addToCart(220, 4)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 5.jpeg" alt="Product 5">
+                        <h3>Product 5</h3>
+                        <p id="price-symbol-5">Price: </p>
+                        <p id="price-inr-5">Price in INR: </p>
+                        <button class="buy-btn" id="btn-5" onclick="addToCart(120, 5)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 6.jpeg" alt="Product 6">
+                        <h3>Product 6</h3>
+                        <p id="price-symbol-6">Price: </p>
+                        <p id="price-inr-6">Price in INR: </p>
+                        <button class="buy-btn" id="btn-6" onclick="addToCart(350, 6)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 7.jpeg" alt="Product 7">
+                        <h3>Product 7</h3>
+                        <p id="price-symbol-7">Price: </p>
+                        <p id="price-inr-7">Price in INR: </p>
+                        <button class="buy-btn" id="btn-7" onclick="addToCart(90, 7)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 8.jpeg" alt="Product 8">
+                        <h3>Product 8</h3>
+                        <p id="price-symbol-8">Price: </p>
+                        <p id="price-inr-8">Price in INR: </p>
+                        <button class="buy-btn" id="btn-8" onclick="addToCart(400, 8)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 9.jpeg" alt="Product 9">
+                        <h3>Product 9</h3>
+                        <p id="price-symbol-9">Price: </p>
+                        <p id="price-inr-9">Price in INR: </p>
+                        <button class="buy-btn" id="btn-9" onclick="addToCart(180, 9)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 10.jpeg" alt="Product 10">
+                        <h3>Product 10</h3>
+                        <p id="price-symbol-10">Price: </p>
+                        <p id="price-inr-10">Price in INR: </p>
+                        <button class="buy-btn" id="btn-10" onclick="addToCart(270, 10)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 11.jpeg" alt="Product 11">
+                        <h3>Product 11</h3>
+                        <p id="price-symbol-11">Price: </p>
+                        <p id="price-inr-11">Price in INR: </p>
+                        <button class="buy-btn" id="btn-11" onclick="addToCart(130, 11)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product 12.jpeg" alt="Product 12">
+                        <h3>Product 12</h3>
+                        <p id="price-symbol-12">Price: </p>
+                        <p id="price-inr-12">Price in INR: </p>
+                        <button class="buy-btn" id="btn-12" onclick="addToCart(310, 12)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cart Section -->
+            <section id="cart" class="section cart-section">
+                <h2>Your Cart</h2>
+                <p id="cart-content">Your cart is currently empty.</p>
+                <p id="cart-total"></p>
+                <div class="payment-method">
+                    <h3>Payment Method</h3>
+                    <form id="payment-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="upi">UPI ID:</label>
+                        <input type="text" id="upi" name="upi" required>
+                        <button type="submit">Submit Payment</button>
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- Login Section -->
+            <section id="login" class="section login-section">
+                <h2 class="log">Login</h2>
+                <div class="login-box">
+                    <form id="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                        <br>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
