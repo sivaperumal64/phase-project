@@ -1,0 +1,161 @@
+/* Enhanced Styles for Home, Cart, Products, and Login Sections */
+
+/* Home Section Styling */
+#home {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#home h2 {
+    color: #007bff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#home p {
+    color: #343a40;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Products Section Styling */
+#products {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#products h2 {
+    color: #28a745;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#products .product-card {
+    background-color: #fff5e6; /* Soft peach background */
+    border: 2px solid #ffcc99;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#products .product-card h3 {
+    color: #e69500; /* Orange color for product names */
+}
+
+#products .buy-btn {
+    background-color: #e69500;
+    border-color: #e69500;
+}
+
+#products .buy-btn:hover {
+    background-color: #cc8400;
+}
+
+/* Cart Section Styling */
+#cart {
+    background-color: #e6f7ff; /* Light cyan background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    color: #007bff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#cart #cart-content {
+    color: #343a40;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#cart #cart-total {
+    color: #28a745;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: 2px solid #007bff;
+    padding-top: 10px;
+}
+
+/* Specific styles for the new login section */
+.new-login-section {
+    background-color: #ffebcc; /* Light background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Fixed width for the box */
+    margin: 50px auto; /* Center the form */
+    border: 1px solid #ddd; /* Subtle border */
+}
+
+/* Specific styles for the form inside the new login section */
+.new-login-section #new-login-form {
+    max-width: 350px; /* Narrow the form */
+    margin: auto; /* Center the form within the box */
+}
+
+.new-login-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark text */
+}
+
+.new-login-section input[type="email"],
+.new-login-section input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.new-login-section input[type="email"]:focus,
+.new-login-section input[type="password"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.new-login-section button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.new-login-section button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.new-login-section .form-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.new-login-section .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.new-login-section .form-footer a:hover {
+    text-decoration: underline;
+}
