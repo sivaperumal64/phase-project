@@ -25,41 +25,49 @@ function showSection(sectionId) {
 
 function addToCart(price, productId) {
     const productPrice = productPrices[productId].price;
-    const productCurrency = productPrices[productId].currency;
 
+    // Add product to cart and update total cart value
     cart.push(productId);
-    totalCartValueInINR += price;
+    totalCartValueInINR += productPrice;
 
-    document.getElementById(`btn-${productId}`).textContent = 'Added';
-    document.getElementById(`btn-${productId}`).style.backgroundColor = '#6c757d';
-    document.getElementById(`btn-${productId}`).disabled = true;
+    // Disable 'Add to Cart' button
+    const button = document.getElementById(`btn-${productId}`);
+    if (button) {
+        button.textContent = 'Added';
+        button.style.backgroundColor = '#6c757d';
+        button.disabled = true;
+    }
 
     updateCart();
     updatePricesBasedOnLocation();
 }
 
 function updatePricesBasedOnLocation() {
-    const location = document.getElementById('location').value;
+    const location = document.getElementById('location').value || 'INR'; // Default to INR if no location is selected
 
-    let currencySymbol = '';
-    let conversionRate = 1; // Default to INR
+    let currencySymbol = '₹';
+    let conversionRate = 1; // Default conversion rate (for INR)
 
     switch (location) {
         case 'UK':
             currencySymbol = '£';
-            conversionRate = 0.01; // Example conversion rate
+            conversionRate = 0.01; // Example conversion rate for UK
             break;
         case 'US':
             currencySymbol = '$';
-            conversionRate = 0.012; // Example conversion rate
+            conversionRate = 0.012; // Example conversion rate for US
             break;
         case 'AU':
             currencySymbol = 'A$';
-            conversionRate = 0.018; // Example conversion rate
+            conversionRate = 0.018; // Example conversion rate for Australia
             break;
         case 'SG':
             currencySymbol = 'S$';
-            conversionRate = 0.016; // Example conversion rate
+            conversionRate = 0.016; // Example conversion rate for Singapore
+            break;
+        case 'INR':
+            currencySymbol = '₹';
+            conversionRate = 1; // No conversion for INR
             break;
     }
 
@@ -70,8 +78,12 @@ function updatePricesBasedOnLocation() {
         const price = productPrices[i].price;
         const convertedPrice = (price * conversionRate).toFixed(2);
 
-        priceElement.textContent = `Price: ${currencySymbol}${convertedPrice}`;
-        priceInrElement.textContent = `Price in INR: ₹${price}`;
+        if (priceElement) {
+            priceElement.textContent = `Price: ${currencySymbol}${convertedPrice}`;
+        }
+        if (priceInrElement) {
+            priceInrElement.textContent = `Price in INR: ₹${price}`;
+        }
     }
 }
 
@@ -121,4 +133,7 @@ function validatePassword(password) {
 }
 
 // Initialize the page with default prices
-updatePricesBasedOnLocation();
+window.onload = function () {
+    document.getElementById('location').value = 'INR'; // Set default location to INR
+    updatePricesBasedOnLocation();
+};
