@@ -209,17 +209,17 @@ select {
 /* Styles for the location container */
 .location-container {
     padding: 10px;
+    height:105px;
+    width: 200px;
     background-color: #e9ecef;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.log {
-    padding-left: 150px;
-}
+
 
 .payment-method {
-    background-color: #ffffff;
+    background-color: #a1dcdb;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -251,7 +251,7 @@ input[type="email"],
 input[type="tel"],
 input[type="text"] {
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 5px;
     transition: border 0.3s; /* Smooth border transition */
@@ -284,3 +284,8 @@ button[type="submit"]:hover {
         width: 90%; /* Make the box wider on smaller screens */
     }
 }
+
+
+
+
+
