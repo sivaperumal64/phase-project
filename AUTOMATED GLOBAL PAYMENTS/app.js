@@ -132,8 +132,53 @@ function validatePassword(password) {
     return passwordPattern.test(password);
 }
 
+// Payment form submission
+document.getElementById('payment-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const cvv = document.getElementById('cvv').value;
+    const upiApp = document.getElementById('upi-app').value;
+    const email = document.getElementById('upi-email').value;
+
+    if (!cvv || !upiApp || !email) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    alert(`Payment successful! \nCVV: ${cvv}\nUPI App: ${upiApp}\nEmail: ${email}`);
+});
+
 // Initialize the page with default prices
 window.onload = function () {
     document.getElementById('location').value = 'INR'; // Set default location to INR
     updatePricesBasedOnLocation();
 };
+
+// script.js
+
+document.getElementById('send-btn').addEventListener('click', function() {
+    const userInput = document.getElementById('user-input').value;
+    if (userInput.trim() === '') return;
+
+    // Display user's message
+    const userMessageDiv = document.createElement('div');
+    userMessageDiv.className = 'user-message';
+    userMessageDiv.textContent = userInput;
+    document.getElementById('chatbot-messages').appendChild(userMessageDiv);
+
+    // Clear input field
+    document.getElementById('user-input').value = '';
+
+    // Simulate bot response
+    setTimeout(() => {
+        const botResponseDiv = document.createElement('div');
+        botResponseDiv.className = 'bot-message';
+        botResponseDiv.textContent = `You said: ${userInput}`; // Here, you can integrate a real AI response
+        document.getElementById('chatbot-messages').appendChild(botResponseDiv);
+        
+        // Scroll to the bottom of the chat
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }, 500);
+});
+
