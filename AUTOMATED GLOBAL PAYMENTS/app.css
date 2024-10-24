@@ -975,3 +975,162 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Ensure buttons have a minimum height */
+button {
+    min-height: 40px; /* Adjust as needed */
+}
+
+/* Focus styles for buttons */
+button:focus {
+    outline: 3px solid #007bff; /* Add a clear focus indicator */
+}
+
+/* Enhanced hover for nav items */
+.nav-item:hover {
+    background-color: #495057;
+    transform: scale(1.02); /* Slightly scale on hover */
+}
+
+.buy-btn, .explore-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.buy-btn::after, .explore-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0; /* Behind the text */
+}
+
+.buy-btn:hover::after, .explore-btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.buy-btn span, .explore-btn span {
+    position: relative;
+    z-index: 1; /* On top of the effect */
+}
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ffcc99; /* Change border color on hover */
+}
+.sidebar-nav .nav-item {
+    transition: box-shadow 0.3s, background-color 0.3s, transform 0.2s;
+}
+
+.sidebar-nav .nav-item:hover {
+    background-color: #495057;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
+}
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"] {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus {
+    border-color: #007bff; /* Change border color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow */
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 280px; /* Expand sidebar on hover */
+}
+h2 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #007bff; /* Change color on hover */
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #495057; /* Darken on hover */
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --background-color: #f4f4f4;
+    --sidebar-bg: #1c1c1c;
+    --hover-bg: #343a40;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg);
+    padding: 30px 20px;
+}
+
+.nav-item:hover {
+    background-color: var(--hover-bg);
+    transform: translateX(5px);
+}
+
+.buy-btn,
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.buy-btn:hover,
+button[type="submit"]:hover {
+    background-color: darken(var(--primary-color), 10%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+    .content {
+        margin-left: 80px;
+    }
+}
+
+
