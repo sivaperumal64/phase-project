@@ -1,0 +1,217 @@
+<!-- <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="bussines.css">  
+    <title>Business Account</title>  
+</head>  
+<body>  
+    <header class="navbar">  
+        <div class="dropdown">  
+            <button class="dropbtn">Products</button>  
+            <div class="dropdown-content">  
+                <a href="business-account.html">Business Account</a>  
+                <a href="#">Corporate Cards</a>  
+                <a href="#">Card Payments</a>  
+                <a href="#">Currency Exchange</a>  
+            </div>  
+        </div>  
+        <div class="dropdown">  
+            <button class="dropbtn">Pricing</button>  
+        </div>  
+        <div class="dropdown">  
+            <button class="dropbtn">Resources</button>  
+        </div>  
+    </header>  
+
+    <main>  
+        <div class="container">  
+            <h1>Business Account</h1>  
+            <p>Open a Business Account with us and enjoy a range of benefits including:</p>  
+            <ul>  
+                <li>Flexible banking options</li>  
+                <li>Access to credit lines</li>  
+                <li>Online account management</li>  
+                <li>Dedicated customer support</li>  
+            </ul>  
+            <p>Sign up today and take your business to the next level!</p>  
+            <a href="#" class="cta-button">Get Started</a>  
+        </div>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>  
+    </footer>  
+</body>  
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="bussines.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="left-section">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Manage your Money Anywhere</h1>
+            <p>View all the analytics and grow your business from anywhere!</p>
+            <blockquote>
+                <p>"This analytics platform is a game-changer! It's easy to use, provides valuable insights, and has helped me make smarter business decisions. I highly recommend it."</p>
+                <cite>
+                    <img src="casey.jpg" alt="Casey Bachmeyer" class="profile-pic">
+                    Casey Bachmeyer, Founder, Sisyphus Ventures
+                </cite>
+            </blockquote>
+        </div>
+
+    
+        <div class="right-section">
+            <h2>Create an account</h2>
+            <form>
+                <div class="form-group">
+                    <label for="user-type">I am a:</label>
+                    <select id="user-type">
+                        <option value="merchant">Merchant</option>
+                        <option value="agent">Agent</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="company-location">Where is your company based?</label>
+                    <select id="company-location">
+                        <option value="location1">Location 1</option>
+                        <option value="location2">Location 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="business-email">Business E-mail</label>
+                    <input type="email" id="business-email">
+                </div>
+                <div class="form-group">
+                    <label for="industry">Please select an Industry</label>
+                    <select id="industry">
+                        <option value="industry1">Industry 1</option>
+                        <option value="industry2">Industry 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" id="phone-number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="privacy-policy">
+                    <label for="privacy-policy">I accept the Privacy Policy</label>
+                </div>
+                <button type="submit" class="submit-button">Create an Account</button>
+            </form>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Account Registration</title>
+    <link rel="stylesheet" href="bussines.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Business Account</h1>
+        <form id="businessAccountForm" data-nav-link>
+            <div class="form-group">
+                <label for="businessName">Business Name</label>
+                <input type="text" id="businessName" name="businessName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="businessType">Business Type</label>
+                <select id="businessType" name="businessType" required>
+                    <option value="">Select Business Type</option>
+                    <option value="soleProprietorship">Sole Proprietorship</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="corporation">Corporation</option>
+                    <option value="llc">Limited Liability Company (LLC)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="registrationNumber">Business Registration Number</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="taxId">Tax ID / VAT Number</label>
+                <input type="text" id="taxId" name="taxId" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Business Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="postalCode">Postal Code</label>
+                <input type="text" id="postalCode" name="postalCode" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactName">Primary Contact Name</label>
+                <input type="text" id="contactName" name="contactName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Contact Email</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactPhone">Contact Phone</label>
+                <input type="tel" id="contactPhone" name="contactPhone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="currency">Preferred Currency</label>
+                <select id="currency" name="currency" required>
+                    <option value="">Select Currency</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">British Pound (GBP)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                </select>
+            </div>
+
+            <button type="submit">Create Business Account</button>
+        </form>
+    </div>
+    <script src="bussines.js"></script>
+</body>
+</html>
+
+

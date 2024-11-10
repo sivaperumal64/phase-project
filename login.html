@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="login.css">  
+    <title> Payer Login</title>  
+</head>  
+<body>  
+    <div data-nav-link class="container">  
+        <img src="log.jpeg" alt="Global Payment & invoice Management" class="logo"> <!-- Replace with your logo image -->  
+        <h1>PAYER LOGIN</h1>  
+        
+            <input id="login" type="email" placeholder="Email" oninput="loginvalidation()" required> 
+            <span id="login-error"></span> 
+            <button type="button" id="submit" class="next-button" onclick="mysubmit()">Next</button>  
+            <div class="checkbox-container">  
+                <input type="checkbox" id="rememberMe">  
+                <label for="remember-me">Remember me</label>  
+            </div>  
+    </div>
+    <script src="login.js"></script>  
+</body>  
+</html>

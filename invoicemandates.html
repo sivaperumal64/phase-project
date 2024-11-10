@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Invoicing Mandates Compliance Checker</title>
+    <link rel="stylesheet" href="invoicemandates.css">
+</head>
+<body>
+    <div id="mandates-link" data-nav-link class="container">
+        <h1>e-Invoicing Mandates Compliance Checker</h1>
+        <form id="invoiceForm">
+            <label for="invoiceNumber">Invoice Number:</label>
+            <input type="text" id="invoiceNumber" required>
+
+            <label for="invoiceDate">Invoice Date:</label>
+            <input type="date" id="invoiceDate" required>
+
+            <label for="buyerGstin">Buyer GSTIN:</label>
+            <input type="text" id="buyerGstin" required>
+
+            <label for="sellerGstin">Seller GSTIN:</label>
+            <input type="text" id="sellerGstin" required>
+
+            <label for="totalAmount">Total Amount:</label>
+            <input type="number" id="totalAmount" step="0.01" required>
+
+            <label for="taxAmount">Tax Amount:</label>
+            <input type="number" id="taxAmount" step="0.01" required>
+
+            <button type="submit">Check Compliance</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Compliance Result</h2>
+            <ul id="complianceList"></ul>
+        </div>
+    </div>
+    <script src="invoicemandates.js"></script>
+</body>
+</html>

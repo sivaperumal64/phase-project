@@ -1,0 +1,187 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    background-color: #fff;  
+    padding: 20px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+.logo {  
+    font-size: 24px;  
+    font-weight: bold;  
+}  
+
+nav a {  
+    margin: 0 15px;  
+    text-decoration: none;  
+    color: #333;  
+}  
+
+nav .login {  
+    background-color: #f0a500;  
+    color: white;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+}  
+nav .sigin {
+    background-color: #0483e4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav .get-started {  
+    background-color: black;  
+    color: white;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+}  
+
+.hero {  
+    /* background-image: url('landing\ page.png');  */
+    background-size: cover;  
+    background-position: center;  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    color: white;  
+}  
+
+.hero-content {  
+    background-color: rgba(0, 0, 0, 0.5);  
+    padding: 20px;  
+    border-radius: 10px;  
+}  
+
+.tags {  
+    margin-bottom: 20px;  
+}  
+
+.tag {  
+    display: inline-block;  
+    background-color: white;  
+    color: black;  
+    padding: 10px;  
+    border-radius: 20px;  
+    margin: 5px;  
+}  
+
+h1 {  
+    font-size: 36px;  
+    margin: 20px 0;  
+}  
+
+.cta {  
+    background-color: #f0a500;  
+    color: white;  
+    padding: 15px 30px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ffffff;  
+    color: #000;  
+    padding: 10px;  
+    font-size: 16px;  
+    border: none;  
+    cursor: pointer;  
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;  
+    position: absolute;  
+    /* background-color: #007bff;   */
+    min-width: 200px;  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+    z-index: 1;  
+    border-radius: 4px; /* Rounded corners */  
+    margin-top: 5px; 
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    color: #186bc9; /* White text */  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content a:hover {
+    background-color: #628ebd53
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e7e7e7;
+}
+
+.drop-up {  
+    position: relative;  
+    display: inline-block;  
+}  
+
+.drop-btn {  
+    background-color: #ffffff;  
+    color: #000;  
+    padding: 10px;  
+    font-size: 16px;  
+    border: none;  
+    cursor: pointer;  
+    position: relative; 
+    border-radius: 40px; 
+}  
+
+.drop-up-content {  
+    display: none;  
+    position: absolute;  
+    background-color: #e9edf0; /* Blue color */  
+    min-width: 200px;  
+    box-shadow: 0px -8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow in upward direction */  
+    z-index: 1;  
+    border-radius: 4px; /* Rounded corners */  
+    margin-bottom: 5px; /* Space between button and dropdown */  
+    bottom: 100%; /* Position above the button */  
+    left: 0; /* Align dropdown with the button */  
+    white-space: nowrap; /* Prevent line breaks */  
+}  
+
+.drop-up-content a {  
+    color: #0f0e0e; /* White text */  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+    overflow: hidden; /* Prevent text overflow */  
+    text-overflow: ellipsis; /* Add ellipsis for overflow */  
+}  
+
+.drop-up-content a:hover {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}  
+
+.drop-up:hover .drop-up-content {  
+    display: block;  
+}  
+
+.drop-up:hover .drop-btn {  
+    background-color: #e7e7e7;  
+} 

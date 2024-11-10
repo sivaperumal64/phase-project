@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Capture System</title>
+    <link rel="stylesheet" href="incapture.css">
+</head>
+<body>
+    <div id="invoiceCapture-link" data-nav-link class="container">
+        <h1>Invoice Capture System</h1>
+        <div class="upload-section">
+            <input type="file" id="invoiceUpload" accept="image/*">
+            <button id="captureBtn">Capture Invoice Data</button>
+        </div>
+        <div class="preview-section">
+            <img id="invoicePreview" src="" alt="Invoice Preview">
+        </div>
+        <div class="result-section">
+            <h2>Extracted Data</h2>
+            <p>Invoice Number: <span id="invoiceNumber"></span></p>
+            <p>Date: <span id="invoiceDate"></span></p>
+            <p>Total Amount: <span id="invoiceAmount"></span></p>
+        </div>
+    </div>
+    <script src="incapture.js"></script>
+</body>
+</html>
