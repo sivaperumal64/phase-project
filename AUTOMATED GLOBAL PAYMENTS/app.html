@@ -21,11 +21,12 @@
         <aside class="sidebar">
             <h2>Global Store</h2>
             <nav class="sidebar-nav">
+                <a href="#" onclick="showSection('login')" class="nav-item">Login</a>
                 <a href="#" onclick="showSection('home')" class="nav-item"><i class="fas fa-home"></i> Home</a>
-
                 <a href="#" onclick="showSection('products')" class="nav-item">Products</a>
                 <a href="#" onclick="showSection('cart')" class="nav-item">Cart</a>
-                <a href="#" onclick="showSection('login')" class="nav-item">Login</a>
+                <a href="#" onclick="showSection('payments')" class="nav-item">Payments</a>
+                <a href="#" onclick="showSection('invoices')" class="nav-item">Invoices</a>
             </nav>
         </aside>
 
@@ -37,6 +38,8 @@
                 <button onclick="showSection('home')" class="nav-button">Home</button>
                 <button onclick="showSection('products')" class="nav-button">Products</button>
                 <button onclick="showSection('cart')" class="nav-button">Cart</button>
+                <button onclick="showSection('payments')" class="nav-button">Payments</button>
+                <button onclick="showSection('invoices')" class="nav-button">Invoices</button>
 
             </nav>`
             <!-- Home Section -->
@@ -45,7 +48,7 @@
                     <h2 class="center-text">Welcome to Global Store</h2>
                     <p class="center-text">Explore the best global products with automatic price conversion to INR for
                         users in India.</p>
-                        <p>Streamline your payment processes with us.</p>
+                    <p>Streamline your payment processes with us.</p>
                     <br>
                     <div class="center-text">
                         <button class="explore-btn" onclick="showSection('products')">Explore Products</button>
@@ -192,6 +195,22 @@
 
             </section>
 
+            <!-- Payments Section -->
+            <section id="payments" class="section payments-section">
+                <h2>Your Payments</h2>
+                <ul id="payment-history">
+                    <!-- Payments will be dynamically inserted here -->
+                </ul>
+            </section>
+
+            <!-- Invoices Section -->
+            <section id="invoices" class="section invoices-section">
+                <h2>Your Invoices</h2>
+                <ul id="invoice-history">
+                    <!-- Invoices will be dynamically inserted here -->
+                </ul>
+            </section>
+
             <!-- Login Section -->
             <!-- New Login Section -->
             <section id="login" class="section new-login-section">
@@ -210,10 +229,27 @@
                 </div>
             </section>
 
+            <!-- Profile Section -->
+            <section id="profile" class="section profile-section">
+                <h2>Account Profile</h2>
+                <div id="profile-details">
+                    <!-- User details will be populated here -->
+                </div>
+            </section>
+
+
+
+
+
         </main>
     </div>
 
+
+
+
     <script src="app.js"></script>
+
+
 </body>
 
 </html>
