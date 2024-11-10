@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Invoicing System</title>
+    <link rel="stylesheet" href="einvoice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>e-Invoicing System</h1>
+        <form id="invoiceForm">
+            <div id="invoice-link" data-nav-link class="form-group">
+                <label for="invoiceNumber">Invoice Number:</label>
+                <input type="text" id="invoiceNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="issueDate">Issue Date:</label>
+                <input type="date" id="issueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" required>
+            </div>
+            <div class="form-group">
+                <label for="sellerName">Seller Name:</label>
+                <input type="text" id="sellerName" required>
+            </div>
+            <div class="form-group">
+                <label for="buyerName">Buyer Name:</label>
+                <input type="text" id="buyerName" required>
+            </div>
+            <div id="itemsContainer">
+                <h3>Items</h3>
+                <div class="item">
+                    <input type="text" class="itemDescription" placeholder="Description" required>
+                    <input type="number" class="itemQuantity" placeholder="Quantity" required>
+                    <input type="number" class="itemPrice" placeholder="Unit Price" required>
+                </div>
+            </div>
+            <button type="button" id="addItem">Add Item</button>
+            <button type="submit">Generate Invoice</button>
+        </form>
+        <div id="invoicePreview" class="hidden">
+            <h2>Invoice Preview</h2>
+            <div id="previewContent"></div>
+        </div>
+    </div>
+    <script src="einvoice.js"></script>
+</body>
+</html>

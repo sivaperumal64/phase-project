@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Automation</title>
+    <link rel="stylesheet" href="invoiceautomation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Automation</h1>
+        <form id="invoiceForm" data-nav-link>
+            <input type="text" id="invoiceNumber" placeholder="Invoice Number" required>
+            <input type="date" id="invoiceDate" required>
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="number" id="invoiceAmount" placeholder="Amount" step="0.01" required>
+            <button type="submit">Add Invoice</button>
+        </form>
+        <div id="invoiceList"></div>
+        <button id="generateReport">Generate Report</button>
+        <div id="report"></div>
+    </div>
+    <script src="invoiceautomation.js"></script>
+</body>
+</html>

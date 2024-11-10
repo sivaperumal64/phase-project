@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="sigin.css">  
+    <title>Payer Signup</title>  
+</head>  
+<body>  
+    <div data-nav-link class="container">  
+        <img src="loo.jpeg" alt="Global Payment & invoice Management" class="logo"> <!-- Replace with your logo image -->  
+        <h1>PAYER SIGNUP</h1>  
+         
+        <input type="text" id="username" placeholder="Username" oninput="usernamevalidating()" required>  
+        <span id="username-error"></span>  
+        <input type="email" id="mail" placeholder="Email" oninput="mailvalidating()" required> 
+        <span id="mail-error"></span> 
+        <input type="password" id="pass" oninput="passwordValidation()" placeholder="Password" required> 
+        <span id="pass-error"></span> 
+        <button type="submit" class="signup-button" onclick="sigin()">Sign Up</button>    
+    </div>   
+    <script src="sigin.js"></script>  
+</body>  
+</html>

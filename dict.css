@@ -1,0 +1,82 @@
+/* Add these styles to your existing styles.css file */
+
+.dictionary-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.dictionary-hero h1 {
+    font-size: 2.5rem;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+.dictionary-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.alphabet-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.letter-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.letter-btn.active {
+    background-color: #0066cc;
+    color: white;
+}
+
+.term {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.term h2 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .alphabet-filter {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrenecyCloud Accounting Dictionary</title>
+    <link rel="stylesheet" href="dict.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="accounting-link" data-nav-link >tipalti</div>
+        <nav>
+            <!-- Navigation menu (same as in the main page) -->
+            <!-- You can copy the entire nav section from your main page here -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="dictionary-hero">
+            <h1>Accounting Dictionary</h1>
+            <p>Your comprehensive guide to accounting terms and definitions</p>
+        </section>
+
+        <section class="dictionary-content">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a term...">
+                <button id="search-button">Search</button>
+            </div>
+
+            <div class="alphabet-filter">
+                <button class="letter-btn" data-letter="all">All</button>
+                <!-- JavaScript will populate this with A-Z buttons -->
+            </div>
+
+            <div id="terms-container">
+                <!-- JavaScript will populate this with terms and definitions -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tipalti. All rights reserved.</p>
+    </footer>
+
+    <script src="dict.js"></script>
+</body>
+</html>

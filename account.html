@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="account.css">  
+    <title>Create Your Account</title>  
+</head>  
+<body>  
+    <div class="container">  
+        <div class="header">  
+            <h1>Create your account</h1>  
+        </div>  
+        <form>  
+            <div class="name-fields">  
+                <input type="text" placeholder="First name" required>  
+                <input type="text" placeholder="Last name" required>  
+            </div>  
+            <div class="address-section">  
+                <h2>Address</h2>  
+                <input type="text" placeholder="Street address" required>  
+                <input type="text" placeholder="City name" required>  
+                <input type="text" placeholder="State" required>  
+                <input type="text" placeholder="Pincode" required>  
+            </div>  
+            <div class="card-section">  
+                <h2>Enter your card</h2>  
+                <input type="text" placeholder="please enter your card number" required>  
+            </div>  
+            <button type="submit" class="verify-button">verify your card</button>  
+        </form>  
+    </div>  
+</body>  
+</html> -->
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Create Your Account</title>  
+    <link rel="stylesheet" href="account.css">  
+</head>  
+<body>  
+    <div data-nav-link class="container">  
+        <h1>Create your account</h1>  
+        <div class="form-group">  
+            <label for="first-name">Name</label>  
+            <span id="first-name-error"></span> 
+            <input type="text" id="first-name" placeholder="First name" oninput="firstnamevalidating()" required> 
+            <input type="text" id="last-name" placeholder="Last name" oninput="lastnamevalidating()" required>  
+            <span id="last-name-error"></span>
+        </div>  
+        <div class="form-group">  
+            <label for="street-address">Address</label> 
+            <span id="street-address-error"></span>   
+            <input type="text" id="street-address" class="half-width" placeholder="Street address" oninput="streetaddressvalidating()" required>
+            <input type="text" id="city-name" class="half-width" placeholder="City name" oninput="citynamevalidating()" required>
+            <span id="city-name-error"></span>  
+            <span id="state-error"></span>  
+            <input type="text" id="state" class="half-width" placeholder="State" oninput="statevalidating()" required>
+            <span id="state-error"></span>  
+            <input type="text" id="pincode" class="half-width" placeholder="Pincode" oninput="pincodevalidating()" required>
+            <span id="pincode-error"></span>  
+        </div>  
+        <div class="form-group">  
+            <label for="card-number">Enter your card</label>  
+            <input type="text" id="card-number" class="half-width" placeholder="please enter your card number" oninput="cardnumbervalidating()" required> 
+            <span id="card-number-error"></span>
+        </div>  
+        <button class="btn" onclick="mysubmit()">verify your card</button>  
+    </div>  
+    <script src="account.js"></script>
+</body>  
+</html>

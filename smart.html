@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Policy</title>
+    <link rel="stylesheet" href="smart.css">
+</head>
+<body>
+    <div id="policy-link" data-nav-link class="container">
+        <h1>Smart Policy</h1>
+        <form id="policyForm">
+            <div class="form-group">
+                <label for="policyType">Policy Type:</label>
+                <select id="policyType" required>
+                    <option value="">Select a policy type</option>
+                    <option value="auto">Auto Insurance</option>
+                    <option value="home">Home Insurance</option>
+                    <option value="life">Life Insurance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="policyHolder">Policy Holder Name:</label>
+                <input type="text" id="policyHolder" required>
+            </div>
+            <div class="form-group">
+                <label for="coverage">Coverage Amount:</label>
+                <input type="number" id="coverage" min="0" step="1000" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Policy Start Date:</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Policy Duration (months):</label>
+                <input type="number" id="duration" min="1" max="120" required>
+            </div>
+            <div class="form-group">
+                <label>Additional Coverage:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="naturalDisasters">
+                    <label for="naturalDisasters">Natural Disasters</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="personalLiability">
+                    <label for="personalLiability">Personal Liability</label>
+                </div>
+            </div>
+            <button type="submit">Calculate Premium</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Policy Summary</h2>
+            <p id="summaryText"></p>
+            <p>Estimated Premium: <span id="premium"></span></p>
+        </div>
+    </div>
+    <script src="smart.js"></script>
+</body>
+</html>
