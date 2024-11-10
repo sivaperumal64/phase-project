@@ -209,7 +209,7 @@ select {
 /* Styles for the location container */
 .location-container {
     padding: 10px;
-    height:105px;
+    height: 105px;
     width: 200px;
     background-color: #e9ecef;
     border-radius: 5px;
@@ -225,26 +225,33 @@ select {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
-    margin-left: auto; /* Center the payment method box */
-    margin-right: auto; /* Center the payment method box */
+    max-width: 400px;
+    /* Adjust as needed */
+    margin-left: auto;
+    /* Center the payment method box */
+    margin-right: auto;
+    /* Center the payment method box */
 }
 
 .payment-method h3 {
     text-align: center;
     margin-bottom: 15px;
-    color: #343a40; /* Darker text for contrast */
+    color: #343a40;
+    /* Darker text for contrast */
 }
 
 #payment-form {
     display: flex;
-    flex-direction: column; /* Arrange inputs vertically */
+    flex-direction: column;
+    /* Arrange inputs vertically */
 }
 
 label {
     margin-bottom: 5px;
-    font-weight: bold; /* Make label text bold */
-    color: #495057; /* Darker label color */
+    font-weight: bold;
+    /* Make label text bold */
+    color: #495057;
+    /* Darker label color */
 }
 
 input[type="email"],
@@ -254,14 +261,17 @@ input[type="text"] {
     margin-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 5px;
-    transition: border 0.3s; /* Smooth border transition */
+    transition: border 0.3s;
+    /* Smooth border transition */
 }
 
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="text"]:focus {
-    border-color: #007bff; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #007bff;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
 }
 
 button[type="submit"] {
@@ -275,13 +285,15 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
+    /* Darker shade on hover */
 }
 
 /* Responsive design */
 @media (max-width: 480px) {
     .payment-method {
-        width: 90%; /* Make the box wider on smaller screens */
+        width: 90%;
+        /* Make the box wider on smaller screens */
     }
 }
 
@@ -291,6 +303,7 @@ button[type="submit"]:hover {
     padding: 15px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 .sidebar-nav .nav-item:hover {
     background-color: #495057;
     box-shadow: 0 0 10px blue;
@@ -298,7 +311,8 @@ button[type="submit"]:hover {
 }
 
 .sidebar-nav .nav-item:before {
-    content: '➡'; /* Replace with actual icons */
+    content: '➡';
+    /* Replace with actual icons */
     margin-right: 10px;
 }
 
@@ -361,8 +375,8 @@ button[type="submit"]:hover {
     .content {
         margin-left: 90px;
     }
-a
-    .sidebar-nav .nav-item {
+
+    a .sidebar-nav .nav-item {
         text-align: center;
     }
 }
@@ -460,7 +474,8 @@ body {
 
 /* Home Section Styling */
 #home {
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff;
+    /* Light blue background */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -508,7 +523,8 @@ body {
 }
 
 .product-card {
-    background-color: #fff5e6; /* Soft peach background */
+    background-color: #fff5e6;
+    /* Soft peach background */
     border: 2px solid #ffcc99;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 20px;
@@ -536,7 +552,8 @@ body {
 }
 
 .product-card h3 {
-    color: #e69500; /* Orange color for product names */
+    color: #e69500;
+    /* Orange color for product names */
     margin: 15px 0 10px 0;
     font-size: 1.5em;
 }
@@ -565,7 +582,8 @@ body {
 
 /* Cart Section Styling */
 #cart {
-    background-color: #e6f7ff; /* Light cyan background */
+    background-color: #e6f7ff;
+    /* Light cyan background */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -656,13 +674,17 @@ body {
 
 /* Login Section Enhancements */
 .new-login-section {
-    background-color: #ffebcc; /* Light background color */
+    background-color: #ffebcc;
+    /* Light background color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 400px; /* Fixed width for the box */
-    margin: 50px auto; /* Center the form */
-    border: 1px solid #ddd; /* Subtle border */
+    width: 400px;
+    /* Fixed width for the box */
+    margin: 50px auto;
+    /* Center the form */
+    border: 1px solid #ddd;
+    /* Subtle border */
 }
 
 .new-login-section h2 {
@@ -673,15 +695,18 @@ body {
 }
 
 .new-login-section #new-login-form {
-    max-width: 350px; /* Narrow the form */
-    margin: auto; /* Center the form within the box */
+    max-width: 350px;
+    /* Narrow the form */
+    margin: auto;
+    /* Center the form within the box */
 }
 
 .new-login-section label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333; /* Dark text */
+    color: #333;
+    /* Dark text */
 }
 
 .new-login-section input[type="email"],
@@ -977,26 +1002,31 @@ button:hover {
 
 /* Ensure buttons have a minimum height */
 button {
-    min-height: 40px; /* Adjust as needed */
+    min-height: 40px;
+    /* Adjust as needed */
 }
 
 /* Focus styles for buttons */
 button:focus {
-    outline: 3px solid #007bff; /* Add a clear focus indicator */
+    outline: 3px solid #007bff;
+    /* Add a clear focus indicator */
 }
 
 /* Enhanced hover for nav items */
 .nav-item:hover {
     background-color: #495057;
-    transform: scale(1.02); /* Slightly scale on hover */
+    transform: scale(1.02);
+    /* Slightly scale on hover */
 }
 
-.buy-btn, .explore-btn {
+.buy-btn,
+.explore-btn {
     position: relative;
     overflow: hidden;
 }
 
-.buy-btn::after, .explore-btn::after {
+.buy-btn::after,
+.explore-btn::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -1007,17 +1037,22 @@ button:focus {
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.4s ease;
-    z-index: 0; /* Behind the text */
+    z-index: 0;
+    /* Behind the text */
 }
 
-.buy-btn:hover::after, .explore-btn:hover::after {
+.buy-btn:hover::after,
+.explore-btn:hover::after {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.buy-btn span, .explore-btn span {
+.buy-btn span,
+.explore-btn span {
     position: relative;
-    z-index: 1; /* On top of the effect */
+    z-index: 1;
+    /* On top of the effect */
 }
+
 .product-card {
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
@@ -1025,8 +1060,10 @@ button:focus {
 .product-card:hover {
     transform: translateY(-5px) rotate(2deg);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    border-color: #ffcc99; /* Change border color on hover */
+    border-color: #ffcc99;
+    /* Change border color on hover */
 }
+
 .sidebar-nav .nav-item {
     transition: box-shadow 0.3s, background-color 0.3s, transform 0.2s;
 }
@@ -1036,6 +1073,7 @@ button:focus {
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
     transform: translateY(-2px);
 }
+
 input[type="email"],
 input[type="password"],
 input[type="tel"],
@@ -1047,9 +1085,12 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="tel"]:focus,
 input[type="text"]:focus {
-    border-color: #007bff; /* Change border color */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow */
+    border-color: #007bff;
+    /* Change border color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Add shadow */
 }
+
 .product-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1061,16 +1102,20 @@ input[type="text"]:focus {
 }
 
 .sidebar:hover {
-    width: 280px; /* Expand sidebar on hover */
+    width: 280px;
+    /* Expand sidebar on hover */
 }
+
 h2 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease;
 }
 
 h2:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff;
+    /* Change color on hover */
 }
+
 footer {
     background-color: #343a40;
     color: white;
@@ -1080,7 +1125,8 @@ footer {
 }
 
 footer:hover {
-    background-color: #495057; /* Darken on hover */
+    background-color: #495057;
+    /* Darken on hover */
 }
 
 :root {
@@ -1128,9 +1174,298 @@ button[type="submit"]:hover {
     .sidebar {
         width: 60px;
     }
+
     .content {
         margin-left: 80px;
     }
 }
 
+/* Style for AI Chatbot Service */
+#chatbot-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+}
 
+#chat-window {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-history {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+
+#user-input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 75%;
+}
+
+#send-btn {
+    padding: 6px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #333;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav .nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar-nav .nav-item:hover {
+    background: #444;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-btn {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: #4cae4c;
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method label {
+    display: block;
+    margin-top: 10px;
+}
+
+#payment-form input, #payment-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#payment-form button {
+    background: #027
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background: #3c3c3c;
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav .nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar-nav .nav-item:hover {
+    background: #575757;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(25% - 20px);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.grid-nav .nav-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-nav .nav-button:hover {
+    background-color: #0056b3;
+}
+
+.explore-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: #218838;
+}
