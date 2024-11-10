@@ -1,20 +1,19 @@
 let cart = [];
 let totalCartValueInINR = 0;
 
-
 const productPrices = {
     1: { price: 100, currency: '₹', name: 'Product 1', image: './product 1.jpeg' },
-    2: { price: 200, currency: '₹', name: 'Product 2', image: './prodcut 2.jpeg' },
-    3: { price: 150, currency: '₹', name: 'Product 3', image: 'product 3.jpeg' },
-    4: { price: 220, currency: '₹', name: 'Product 4', image: 'product 4.jpeg' },
-    5: { price: 120, currency: '₹', name: 'Product 5', image: 'product 5.jpeg' },
-    6: { price: 350, currency: '₹', name: 'Product 6', image: 'product 6.jpeg' },
-    7: { price: 90, currency: '₹', name: 'Product 7', image: 'product 7.jpeg' },
-    8: { price: 400, currency: '₹', name: 'Product 8', image: 'product 8.jpeg' },
-    9: { price: 180, currency: '₹', name: 'Product 9', image: 'product 9.jpeg' },
-    10: { price: 270, currency: '₹', name: 'Product 10', image: 'product 10.jpeg' },
-    11: { price: 130, currency: '₹', name: 'Product 11', image: 'product 11.jpeg' },
-    12: { price: 310, currency: '₹', name: 'Product 12', image: 'product 12.jpeg' },
+    2: { price: 200, currency: '₹', name: 'Product 2', image: './product 2.jpeg' },
+    3: { price: 150, currency: '₹', name: 'Product 3', image: './product 3.jpeg' },
+    4: { price: 220, currency: '₹', name: 'Product 4', image: './product 4.jpeg' },
+    5: { price: 120, currency: '₹', name: 'Product 5', image: './product 5.jpeg' },
+    6: { price: 350, currency: '₹', name: 'Product 6', image: './product 6.jpeg' },
+    7: { price: 90, currency: '₹', name: 'Product 7', image: './product 7.jpeg' },
+    8: { price: 400, currency: '₹', name: 'Product 8', image: './product 8.jpeg' },
+    9: { price: 180, currency: '₹', name: 'Product 9', image: './product 9.jpeg' },
+    10: { price: 270, currency: '₹', name: 'Product 10', image: './product 10.jpeg' },
+    11: { price: 130, currency: '₹', name: 'Product 11', image: './product 11.jpeg' },
+    12: { price: 310, currency: '₹', name: 'Product 12', image: './product 12.jpeg' },
 };
 
 function showSection(sectionId) {
@@ -26,7 +25,7 @@ function showSection(sectionId) {
 
 function addToCart(price, productId) {
     const product = productPrices[productId];
-    const productPrice=product.price;
+    const productPrice = product.price;
 
     // Add product to cart and update total cart value
     cart.push(productId);
@@ -118,7 +117,6 @@ function updateCart() {
     }
 }
 
-
 // Function to validate email and password on login
 document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -173,31 +171,24 @@ window.onload = function () {
     updatePricesBasedOnLocation();
 };
 
-// script.js
+function submitPayment(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const upi = document.getElementById('upi').value;
+    const cardNumber = document.getElementById('card-number').value;
+    const cvv = document.getElementById('cvv').value;
 
-document.getElementById('send-btn').addEventListener('click', function() {
-    const userInput = document.getElementById('user-input').value;
-    if (userInput.trim() === '') return;
+    // Payment submission logic here
+    alert(`Payment Submitted!\nEmail: ${email}\nName: ${name}\nPhone: ${phone}\nUPI: ${upi}`);
+}
 
-    // Display user's message
-    const userMessageDiv = document.createElement('div');
-    userMessageDiv.className = 'user-message';
-    userMessageDiv.textContent = userInput;
-    document.getElementById('chatbot-messages').appendChild(userMessageDiv);
+function loginUser(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-    // Clear input field
-    document.getElementById('user-input').value = '';
-
-    // Simulate bot response
-    setTimeout(() => {
-        const botResponseDiv = document.createElement('div');
-        botResponseDiv.className = 'bot-message';
-        botResponseDiv.textContent = `You said: ${userInput}`; // Here, you can integrate a real AI response
-        document.getElementById('chatbot-messages').appendChild(botResponseDiv);
-        
-        // Scroll to the bottom of the chat
-        const chatbotMessages = document.getElementById('chatbot-messages');
-        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
-    }, 500);
-});
-
+    // Login logic here
+    alert(`Logged in as ${email}`);
+}
